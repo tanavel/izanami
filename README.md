@@ -1,0 +1,2 @@
+# izanami
+Macの設定
