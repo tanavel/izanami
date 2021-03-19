@@ -1,0 +1,10 @@
+---
+- name: Update Homebrew and packages
+  community.general.homebrew:
+    update_homebrew: true
+    upgrade_all: true
+
+- name: Install fomulas
+  community.general.homebrew:
+    name: "{{ item }}"
+  loop: "{{ fomulas }}"
