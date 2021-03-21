@@ -8,3 +8,12 @@
   community.general.homebrew:
     name: "{{ item }}"
   loop: "{{ fomulas }}"
+
+- name: Install homebrew font manager
+  community.general.homebrew_tap:
+    name: homebrew/cask-fonts
+
+- name: Install fonts
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  loop: "{{ fonts }}"
