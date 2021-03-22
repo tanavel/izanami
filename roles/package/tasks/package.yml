@@ -17,3 +17,8 @@
   community.general.homebrew_cask:
     name: "{{ item }}"
   loop: "{{ fonts }}"
+
+- name: Install casks
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  loop: "{{ casks }}"
