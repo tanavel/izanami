@@ -1,0 +1,9 @@
+---
+- import_tasks: zsh.yml
+  tags: zsh
+  
+- import_tasks: "{{ zsh_theme }}.yml"
+  tags: zsh_theme
+
+- import_tasks: vim.yml
+  tags: vim
