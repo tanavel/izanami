@@ -6,3 +6,6 @@
       tags: package
     - role: terminal
       tags: terminal
+    - role: editor
+      tags: editor
+      

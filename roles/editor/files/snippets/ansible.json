@@ -1,0 +1,25 @@
+{
+    "Interpolate ansible valiable": {
+        "prefix": "av",
+        "body": [
+            "\"{{ ${1:item} }}\""
+        ]
+    },
+    "Debug snipet": {
+        "prefix": "debug",
+        "body": [
+            "- name: debug valiable",
+            "  debug:",
+            "    msg: \"{{ ${1:item} }}\"",
+            "  tags: debug"
+        ]
+    },
+    "Ansible comment block": {
+        "prefix": "ansible comment",
+        "body": [
+            "#================================================#",
+            "# ${1:comment}",
+            "#================================================#",
+        ]
+    }
+}
