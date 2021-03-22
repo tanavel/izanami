@@ -1,0 +1,6 @@
+---
+- name: Applay vimrc
+  file:
+    src: "{{ role_path }}/files/vimrc"
+    dest: "{{ ansible_env.HOME }}/.vimrc"
+    state: link

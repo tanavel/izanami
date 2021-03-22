@@ -4,3 +4,5 @@
   roles:
     - role: package
       tags: package
+    - role: terminal
+      tags: terminal

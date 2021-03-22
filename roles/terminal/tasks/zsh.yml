@@ -1,0 +1,28 @@
+- name: Set default shell
+  ansible.builtin.user:
+    name: tanavel
+    shell: "{{ zsh_path }}"
+
+- name: Clone Prezto
+  ansible.builtin.git:
+    repo: "{{ prezto_repo_url }}"
+    dest: "{{ ansible_facts.env.HOME }}{{ prezto_dir }}"
+    recursive: yes
+
+- name: Set Prezto
+  ansible.builtin.file:
+    src: "{{ item }}"
+    dest: "{{ ansible_facts.env.HOME }}/.{{ item | basename }}"
+    state: link
+  loop: "{{ q('ansible.builtin.fileglob', ansible_facts.env.HOME + prezto_dir + '/runcoms/*') }}"
+  when: item | basename not in ['README.md', 'zshrc']
+  notify:
+    - load zshenv
+    - load zprofile
+    - load zshrc
+
+- name: Set my zshrc
+  ansible.builtin.file:
+    src: "{{ role_path }}/files/zshrc"
+    dest: "{{ ansible_env.HOME }}/.zshrc"
+    state: link

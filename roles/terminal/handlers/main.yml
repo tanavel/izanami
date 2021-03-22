@@ -1,0 +1,8 @@
+- name: load zshenv
+  shell: "source {{ ansible_facts.env.HOME }}/.zshenv"
+
+- name: load zprofile
+  shell: "source {{ ansible_facts.env.HOME }}/.zprofile"
+
+- name: load zshrc
+  shell: "source {{ ansible_facts.env.HOME }}/.zshrc"

@@ -1,0 +1,22 @@
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Valiable
+export PIPENV_VENV_IN_PROJECT=true
+export EDITOR='vim'
+export VISUAL='vim'
+
+# Option (http://zsh.sourceforge.net/Doc/Release/Options.html)
+# Alias
+
+
+# BEGIN ANSIBLE MANAGED BLOCK
+autoload -Uz promptinit
+promptinit
+prompt pure
+# END ANSIBLE MANAGED BLOCK
