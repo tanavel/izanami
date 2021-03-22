@@ -1,7 +1,7 @@
 ---
 - import_tasks: zsh.yml
   tags: zsh
-  
+
 - import_tasks: "{{ zsh_theme }}.yml"
   tags: zsh_theme
 
