@@ -1,4 +1,4 @@
-fomulas:
+fomulae:
   - jq
   - lsd
   - terraform
@@ -11,3 +11,13 @@ fonts:
   - font-hack-nerd-font
   - font-ricty-diminished
   - font-source-code-pro
+
+casks:
+  - appcleaner
+  - docker
+  - google-chrome
+  - sequel-ace
+  - session-manager-plugin
+  - slack
+  - visual-studio-code
+  - iterm2
