@@ -18,6 +18,7 @@ Set up your Mac setting with Ansible.
 - [Ansible](https://github.com/ansible/ansible)
 - [pipenv](https://github.com/pypa/pipenv)
 - [pyenv](https://github.com/pyenv/pyenv)
+- [Homebrew](https://brew.sh/)
 
 ## Getting Started
 ### Prerequisites
