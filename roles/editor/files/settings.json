@@ -46,10 +46,6 @@
     "editor.wordWrap": "on",
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
-    "files.associations": {
-        "**/izanami/**/*.yaml": "ansible",
-        "**/izanami/**/*.yml": "ansible"
-    },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
