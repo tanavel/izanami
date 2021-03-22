@@ -1,0 +1,10 @@
+[
+    {
+        "key": "cmd+[IntlYen]",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+alt+cmd+[IntlYen]",
+        "command": "-workbench.action.splitEditor"
+    }
+]

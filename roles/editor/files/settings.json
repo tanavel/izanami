@@ -1,0 +1,79 @@
+{
+    "[ansible]": {
+        "editor.tabSize": 2
+    },
+    "[dockerfile]": {
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[yaml]": {
+        "editor.tabSize": 2
+    },
+    "[yml]": {
+        "editor.tabSize": 2
+    },
+    "css.lint.boxModel": "warning",
+    "css.lint.compatibleVendorPrefixes": "warning",
+    "css.lint.duplicateProperties": "warning",
+    "css.lint.float": "warning",
+    "css.lint.idSelector": "warning",
+    "css.lint.ieHack": "warning",
+    "css.lint.importStatement": "warning",
+    "css.lint.important": "warning",
+    "css.lint.universalSelector": "warning",
+    "css.lint.unknownVendorSpecificProperties": "warning",
+    "css.lint.zeroUnits": "warning",
+    "debug.allowBreakpointsEverywhere": true,
+    "debug.console.fontFamily": "Source Code Pro",
+    "debug.console.fontSize": 14,
+    "diffEditor.renderSideBySide": false,
+    "editor.cursorBlinking": "expand",
+    "editor.fontFamily": "Source Code Pro",
+    "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 5000,
+    "editor.formatOnType": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.scrollBeyondLastLine": false,
+    "editor.showFoldingControls": "always",
+    "editor.snippetSuggestions": "top",
+    "editor.wordWrap": "on",
+    "emmet.triggerExpansionOnTab": true,
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "**/izanami/**/*.yaml": "ansible",
+        "**/izanami/**/*.yml": "ansible"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "git.allowForcePush": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.autofetch": true,
+    "git.fetchOnPull": true,
+    "git.showPushSuccessNotification": true,
+    "markdown.preview.breaks": true,
+    "scm.alwaysShowActions": true,
+    "search.collapseResults": "alwaysCollapse",
+    "search.enableSearchEditorPreview": true,
+    "search.showLineNumbers": true,
+    "terminal.integrated.fontSize": 14,
+    "window.clickThroughInactive": false,
+    "window.openFoldersInNewWindow": "on",
+    "window.restoreFullscreen": true,
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.openPositioning": "last",
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 30,
+    "workbench.tree.renderIndentGuides": "always"
+}

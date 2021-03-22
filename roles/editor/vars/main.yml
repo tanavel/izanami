@@ -1,0 +1,27 @@
+---
+vscode_extensions:
+  # - mechatroner.rainbow-csv
+  # - ms-azuretools.vscode-docker
+  # - ms-ceintl.vscode-language-pack-ja
+  # - ms-python.python
+  # - richie5um2.vscode-sort-json
+  # - vscode-icons-team.vscode-icons
+  # - vscoss.vscode-ansible * メンテされなくなったっぽい
+  - hashicorp.terraform
+  # - alefragnani.bookmarks
+  # - amazonwebservices.aws-toolkit-vscode
+  # - christian-kohler.path-intellisense
+  # - chrmarti.regex
+  # - coenraads.bracket-pair-colorizer
+  # - donjayamanne.githistory
+  # - eamodio.gitlens
+  # - esbenp.prettier-vscode
+  # - felixfbecker.php-debug
+  # - felixfbecker.php-intellisense
+  # - gruntfuggly.todo-tree
+  # - jebbs.plantuml
+  # - junstyle.php-cs-fixer
+  # - msjsdiag.debugger-for-chrome
+  # - neilbrayfield.php-docblocker
+  # - oderwat.indent-rainbow
+  # - yzhang.markdown-all-in-one
