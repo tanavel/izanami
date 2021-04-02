@@ -7,3 +7,6 @@
 
 - import_tasks: vim.yml
   tags: vim
+
+- import_tasks: iterm.yml
+  tags: iterm
