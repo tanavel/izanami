@@ -1,12 +1,12 @@
 ---
-- import_tasks: zsh.yml
+- ansible.builtin.import_tasks: zsh.yml
   tags: zsh
 
-- import_tasks: "{{ zsh_theme }}.yml"
+- ansible.builtin.import_tasks: "{{ zsh_theme }}.yml"
   tags: zsh_theme
 
-- import_tasks: vim.yml
+- ansible.builtin.import_tasks: vim.yml
   tags: vim
 
-- import_tasks: iterm.yml
+- ansible.builtin.import_tasks: iterm.yml
   tags: iterm
