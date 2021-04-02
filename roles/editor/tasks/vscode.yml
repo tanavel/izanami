@@ -1,0 +1,13 @@
+---
+- name: Install VScode extensions
+  vscode_extension:
+    name: "{{ item }}"
+  loop: "{{ vscode_extensions }}"
+
+- name: Set VScode custom setting
+  ansible.builtin.file:
+    src: "{{ item }}"
+    dest: "{{ ansible_env.HOME }}/Library/Application Support/Code/User/{{ item | basename }}"
+    force: yes
+    state: link
+  with_fileglob: "{{ role_path }}/files/*.json"
