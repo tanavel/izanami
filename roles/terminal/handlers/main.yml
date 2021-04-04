@@ -1,8 +1,11 @@
 - name: load zshenv
-  shell: "source {{ ansible_facts.env.HOME }}/.zshenv"
+  shell: "source {{ ansible_env.HOME }}/.zshenv"
 
 - name: load zprofile
-  shell: "source {{ ansible_facts.env.HOME }}/.zprofile"
+  shell: "source {{ ansible_env.HOME }}/.zprofile"
 
 - name: load zshrc
-  shell: "source {{ ansible_facts.env.HOME }}/.zshrc"
+  shell: "source {{ ansible_env.HOME }}/.zshrc"
+
+- name: load plist
+  shell: "killall cfprefsd"

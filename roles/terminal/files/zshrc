@@ -14,9 +14,13 @@ export VISUAL='vim'
 # Option (http://zsh.sourceforge.net/Doc/Release/Options.html)
 # Alias
 
+# powerlevel10k
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# BEGIN ANSIBLE MANAGED BLOCK
 autoload -Uz promptinit
 promptinit
-prompt pure
-# END ANSIBLE MANAGED BLOCK
+prompt powerlevel10k
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
