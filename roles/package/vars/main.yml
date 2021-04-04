@@ -1,9 +1,8 @@
 fomulae:
   - jq
-  - lsd
   - terraform
   - zsh
-  - tree
+  - exa
 
 fonts:
   - font-cascadia-code
