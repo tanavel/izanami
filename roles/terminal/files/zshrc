@@ -13,6 +13,7 @@ export VISUAL='vim'
 
 # Option (http://zsh.sourceforge.net/Doc/Release/Options.html)
 # Alias
+alias ls='exa --icons'
 
 # powerlevel10k
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
