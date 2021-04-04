@@ -2,9 +2,6 @@
 - ansible.builtin.import_tasks: zsh.yml
   tags: zsh
 
-- ansible.builtin.import_tasks: "{{ zsh_theme }}.yml"
-  tags: zsh_theme
-
 - ansible.builtin.import_tasks: vim.yml
   tags: vim
 

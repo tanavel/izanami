@@ -1,7 +1,0 @@
-- name: Set pure theme
-  blockinfile:
-    path: "{{ansible_env.HOME}}/.zshrc"
-    block: |
-      autoload -Uz promptinit
-      promptinit
-      prompt pure
