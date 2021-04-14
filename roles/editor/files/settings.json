@@ -2,5 +2,11 @@
     "editor.fontFamily": "'Source Code Pro', 'MesloLGS Nerd Font', 'Ricty Diminished'",
     "editor.renderWhitespace": "boundary",
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "workbench.editor.enablePreview": false,
+    "editor.scrollBeyondLastLine": false,
+    "editor.minimap.renderCharacters": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
 }
