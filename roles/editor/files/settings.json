@@ -8,5 +8,12 @@
     "editor.minimap.renderCharacters": false,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.editor.labelFormat": "medium",
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.tabCloseButton": "off"
 }
