@@ -8,6 +8,9 @@ vscode_extensions:
   # - vscode-icons-team.vscode-icons
   - zbr.vscode-ansible
   - hashicorp.terraform
+  - ms-toolsai.jupyter
+  - redhat.vscode-yaml
+  - ms-python.python
   # - alefragnani.bookmarks
   # - amazonwebservices.aws-toolkit-vscode
   # - christian-kohler.path-intellisense
