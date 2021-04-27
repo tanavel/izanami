@@ -1,6 +1,5 @@
 ---
 - hosts: localhost
-  tasks:
   roles:
     - role: package
       tags: package
