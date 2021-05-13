@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Source Code Pro', 'MesloLGS Nerd Font', 'Ricty Diminished'",
+    "editor.fontFamily": "'Fira Code', 'MesloLGS Nerd Font', 'Ricty Diminished'",
     "editor.renderWhitespace": "boundary",
     "editor.wordWrap": "on",
     "workbench.editor.enablePreview": false,
@@ -30,5 +30,6 @@
             "viewType": "jupyter.notebook.ipynb",
             "filenamePattern": "*.ipynb"
         }
-    ]
+    ],
+    "workbench.editor.untitled.hint": "hidden"
 }
