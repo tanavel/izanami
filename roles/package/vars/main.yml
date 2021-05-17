@@ -3,6 +3,7 @@ fomulae:
   - terraform
   - zsh
   - exa
+  - tree
 
 fonts:
   - font-cascadia-code
