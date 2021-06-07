@@ -1,3 +1,4 @@
 ---
 - ansible.builtin.import_tasks: package.yml
-  tags: package
+  tags:
+    - package

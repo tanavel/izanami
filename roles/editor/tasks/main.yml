@@ -1,3 +1,4 @@
 ---
 - ansible.builtin.import_tasks: vscode.yml
-  tags: vscode
+  tags:
+    - vscode
