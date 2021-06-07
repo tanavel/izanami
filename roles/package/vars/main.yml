@@ -1,9 +1,10 @@
 fomulae:
   - jq
-  - terraform
   - zsh
   - exa
   - tree
+  - hashicorp/tap/terraform
+  - hashicorp/tap/terraform-ls
 
 fonts:
   - font-cascadia-code
