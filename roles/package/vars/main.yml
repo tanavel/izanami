@@ -5,6 +5,7 @@ fomulae:
   - tree
   - hashicorp/tap/terraform
   - hashicorp/tap/terraform-ls
+  - volta
 
 fonts:
   - font-cascadia-code
