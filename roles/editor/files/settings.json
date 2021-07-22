@@ -25,11 +25,20 @@
     "scm.alwaysShowActions": true,
     "scm.alwaysShowRepositories": true,
     "terminal.integrated.cursorBlinking": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "terraform-ls.experimentalFeatures": {
+        "validateOnSave": true
+    },
+    "workbench.editor.tabSizing": "shrink",
+    "yaml.customTags": [
+        "!encrypted/pkcs1-oaep scalar",
+        "!vault scalar"
     ],
-    "workbench.editor.untitled.hint": "hidden"
+    "redhat.telemetry.enabled": true
 }
