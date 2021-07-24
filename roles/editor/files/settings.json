@@ -40,5 +40,19 @@
         "!encrypted/pkcs1-oaep scalar",
         "!vault scalar"
     ],
-    "redhat.telemetry.enabled": true
+    "redhat.telemetry.enabled": true,
+    "[dockercompose]": {
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
+    "[dockerfile]": {
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "strings": true
+        }
+    }
 }
