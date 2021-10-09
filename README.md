@@ -1,14 +1,15 @@
 # izanami
 
 ## TOC
-1. [About](#about)
+- [izanami](#izanami)
+  - [TOC](#toc)
+  - [About](#about)
     - [Built With](#built-with)
-2. [Getting Started](#getting-started)
+  - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-3. [Usage](#usage)
-4. [License](#license)
-5. [Contact](#contact)
+  - [Usage](#usage)
+  - [Contact](#contact)
 
 
 ## About
@@ -45,10 +46,6 @@ Set up your Mac setting with Ansible.
 - Create virtualenv
   ```
   pipenv install --python 3.9.1
-  ```
-- Install Ansible
-  ```
-  pipenv install ansible
   ```
 
 ## Usage
