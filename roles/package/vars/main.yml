@@ -6,6 +6,9 @@ fomulae:
   - hashicorp/tap/terraform
   - hashicorp/tap/terraform-ls
   - volta
+  - act
+  - copilot # TODO: awsのtapを使う
+  - gh
 
 fonts:
   - font-cascadia-code
