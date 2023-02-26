@@ -7,7 +7,6 @@ fomulae:
   - hashicorp/tap/terraform-ls
   - volta
   - act
-  - copilot # TODO: awsのtapを使う
   - gh
 
 fonts:
@@ -16,6 +15,7 @@ fonts:
   - font-hack-nerd-font
   - font-ricty-diminished
   - font-meslo-lg-nerd-font
+  - font-source-code-pro
 
 casks:
   - appcleaner

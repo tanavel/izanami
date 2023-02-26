@@ -2,5 +2,3 @@ user_name: tanavel
 zsh_path: /usr/local/bin/zsh
 prezto_repo_url: https://github.com/sorin-ionescu/prezto.git
 prezto_dir: /.zprezto
-default_editor: vim
-zsh_theme: pure

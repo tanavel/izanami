@@ -1,12 +1,9 @@
 ---
 - ansible.builtin.import_tasks: zsh.yml
-  tags:
-    - zsh
+  tags: zsh
 
 - ansible.builtin.import_tasks: vim.yml
-  tags:
-    - vim
+  tags: vim
 
 - ansible.builtin.import_tasks: iterm.yml
-  tags:
-    - iterm
+  tags: iterm

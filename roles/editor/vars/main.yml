@@ -1,17 +1,17 @@
 ---
 vscode_extensions:
   # - mechatroner.rainbow-csv
-  - ms-azuretools.vscode-docker
-  - ms-ceintl.vscode-language-pack-ja
+  # - ms-azuretools.vscode-docker
+  # - ms-ceintl.vscode-language-pack-ja
   # - ms-python.python
-  - richie5um2.vscode-sort-json
+  # - richie5um2.vscode-sort-json
   # - vscode-icons-team.vscode-icons
-  - zbr.vscode-ansible
-  - hashicorp.terraform
-  - ms-toolsai.jupyter
-  - redhat.vscode-yaml
-  - ms-python.python
-  - ms-vscode-remote.remote-containers
+  # - zbr.vscode-ansible
+  # - hashicorp.terraform
+  # - ms-toolsai.jupyter
+  # - redhat.vscode-yaml
+  # - ms-python.python
+  # - ms-vscode-remote.remote-containers
   # - alefragnani.bookmarks
   # - amazonwebservices.aws-toolkit-vscode
   # - christian-kohler.path-intellisense
