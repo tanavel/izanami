@@ -25,35 +25,8 @@
     "scm.alwaysShowActions": true,
     "scm.alwaysShowRepositories": true,
     "terminal.integrated.cursorBlinking": true,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
     "workbench.editor.untitled.hint": "hidden",
-    "[terraform]": {
-        "editor.formatOnSave": true
-    },
-    "terraform-ls.experimentalFeatures": {
-        "validateOnSave": true
-    },
     "workbench.editor.tabSizing": "shrink",
-    "yaml.customTags": [
-        "!encrypted/pkcs1-oaep scalar",
-        "!vault scalar"
-    ],
     "redhat.telemetry.enabled": true,
-    "[dockercompose]": {
-        "editor.tabSize": 2,
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": false,
-            "strings": true
-        }
-    },
-    "[dockerfile]": {
-        "editor.tabSize": 2,
-        "editor.quickSuggestions": {
-            "strings": true
-        }
-    },
     "window.zoomLevel": 1
 }
