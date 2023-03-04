@@ -27,3 +27,4 @@ casks:
   - session-manager-plugin
   - slack
   - visual-studio-code
+  - sourcetree
