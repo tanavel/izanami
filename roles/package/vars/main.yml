@@ -24,9 +24,9 @@ fonts:
 casks:
   - appcleaner
   - docker
-  - github
   - google-chrome
   - iterm2
   - sequel-ace
   - slack
+  - sourcetree
   - visual-studio-code
