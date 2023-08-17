@@ -1,58 +1,78 @@
-# izanami
 
-## TOC
-- [izanami](#izanami)
-  - [TOC](#toc)
-  - [About](#about)
-    - [Built With](#built-with)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contact](#contact)
+<div align="center">
+  <a href="https://github.com/tanavel/izanami">
+    <img src="images/mochi1.jpeg" alt="logo" width="500">
+  </a>
+  <p>たなべるのMacの設定あれこれ。ロゴは「もち」だよ。</p>
+</div>
 
-
-## About
-Set up your Mac setting with Ansible.
-
-### Built With
+## Built With
 - [Ansible](https://github.com/ansible/ansible)
-- [pipenv](https://github.com/pypa/pipenv)
-- [pyenv](https://github.com/pyenv/pyenv)
-- [Homebrew](https://brew.sh/)
 
 ## Getting Started
 ### Prerequisites
-- pyenv
-  ```
-  brew install pyenv
-  ```
-- pipenv
-  ```
-  brew install pipenv
-  ```
+- Homebrew
+    - インストール方法は[公式ドキュメント](https://brew.sh/index_ja)参照
+- Ansible
+    ```sh
+    brew install ansible
+    ```
 
 ### Installation
-- Clone the repo
-  ```
-  git clone git@github.com:tanavel/izanami.git
-  ```
-- Install Python3.9.1
-  ```
-  cd izanami
-  pyenv install 3.9.1
-  pyenv local 3.9.1
-  ```
-- Create virtualenv
-  ```
-  pipenv install --python 3.9.1
-  ```
+1. リポジトリをclone
+    ```sh
+    git clone git@github.com:tanavel/izanami.git
+    ```
+1. カレントディレクトリを移動
+    ```sh
+    cd izanami
+    ```
 
 ## Usage
-- Execute playbook
-  ```
-  pipenv run ansible-playbook site.yml
-  ```
+### 自動化できている系
+- 全部実行
+    ```sh
+    ansible-playbook playbook.yml --ask-become-pass
+    ```
+
+- 一部だけ実行 (タグを指定)
+    ```sh
+    ansible-playbook playbook.yml -t package
+    ```
+
+- 使えるタグ
+    | 名前 | 説明 |
+    |---|---|
+    | package  | CLIアプリ、GUIアプリ、フォント |
+    | homebrew |packageと一緒 |
+    | terminal | ターミナル環境全般[^1] |
+    | zsh | zshの設定[^1] |
+    | vim | vimの設定 |
+    | iterm | iTermの設定 |
+
+[^1]: デフォルトshellの変更をするため`--ask-become-pass`オプションをつけること
+
+### VSCodeの設定
+- VSCodeを開く
+- コマンドパレットに`>profiles: import profile`と入力し、[profiles: import profile...]をクリック
+- [Select File...]をクリック
+- [editor/general.code-profile]をクリック
+- [Create Profile]をクリック
+- [Create]をクリック
+- VSCodeを再起動
+- 完了🎉🎉🎉
+
+## Roadmap
+- [ ] Macの設定もdefaultsコマンドで自動化したいよ
+- [ ] 自動化できないけど新しいMacを手に入れたらやっておきたいことリストも作りたいよ
+- [ ] Chromeの拡張機能もインストールできるようにしたいよ
+- [ ] Apple Storeからのインストールも自動化したいよ
+- [ ] zsh環境をもうちょいリッチにしたいよ
+    - [ ] lsコマンドをおしゃれにしたり
+    - [ ] コマンドの予測を賢くしたり
+- [ ] gitの設定
+- [ ] 変数ファイルの場所のネストが深いのでhost_varsみたいな感じで浅いところで一括で設定したい
 
 ## Contact
-tanavel - [@tanavel1118](https://twitter.com/tanavel1118) - tanavel1118@gmail.com
+tanavel - [@t4n4v3l_work](https://twitter.com/t4n4v3l_work)
+

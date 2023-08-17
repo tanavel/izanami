@@ -1,0 +1,14 @@
+---
+- name: Gitの設定 (user.name)
+  community.general.git_config:
+    scope: global
+    name: user.name
+    value: tanavel
+
+- name: Gitの設定 (user.email)
+  community.general.git_config:
+    scope: global
+    name: user.email
+    value: "{{ mail_address }}"
+
+

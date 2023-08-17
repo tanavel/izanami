@@ -1,4 +1,4 @@
 ---
-- ansible.builtin.import_tasks: package.yml
+- ansible.builtin.import_tasks: homebrew.yml
   tags:
-    - package
+    - homebrew

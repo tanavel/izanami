@@ -1,9 +1,13 @@
 ---
 - hosts: localhost
+
+  vars_prompt:
+    - name: mail_address
+      prompt: Enter your mail address for git config
+      private: false
+
   roles:
     - role: package
       tags: package
     - role: terminal
       tags: terminal
-    - role: editor
-      tags: editor

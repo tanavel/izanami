@@ -1,28 +1,24 @@
 ---
-- name: Update Homebrew and packages
+- name: Homebrew本体とインストール済みパッケージの更新
   community.general.homebrew:
     update_homebrew: true
     upgrade_all: true
 
-- name: Install hashicorp tap
+- name: tapを追加
   community.general.homebrew_tap:
-    name: hashicorp/tap
+    name: "{{ taps }}"
 
-- name: Install fomulae
+- name: CLIアプリケーション
   community.general.homebrew:
     name: "{{ item }}"
   loop: "{{ fomulae }}"
 
-- name: Install homebrew font manager
-  community.general.homebrew_tap:
-    name: homebrew/cask-fonts
-
-- name: Install fonts
-  community.general.homebrew_cask:
-    name: "{{ item }}"
-  loop: "{{ fonts }}"
-
-- name: Install casks
+- name: GUIアプリケーション
   community.general.homebrew_cask:
     name: "{{ item }}"
   loop: "{{ casks }}"
+
+- name: フォント
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  loop: "{{ fonts }}"

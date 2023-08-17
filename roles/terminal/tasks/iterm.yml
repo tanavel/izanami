@@ -1,9 +1,7 @@
 ---
-- name: Copy iTerm setting
+- name: iTermの設定
   ansible.builtin.file:
     src: "{{ role_path }}/files/com.googlecode.iterm2.plist"
     dest: "{{ ansible_env.HOME }}/Library/Preferences/com.googlecode.iterm2.plist"
     state: link
     force: yes
-  notify:
-    - load plist

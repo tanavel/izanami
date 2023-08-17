@@ -1,5 +1,5 @@
 ---
-- name: Applay vimrc
+- name: vimrcのシンボリックリンクを張る
   file:
     src: "{{ role_path }}/files/vimrc"
     dest: "{{ ansible_env.HOME }}/.vimrc"

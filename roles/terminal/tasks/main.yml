@@ -5,5 +5,8 @@
 - ansible.builtin.import_tasks: vim.yml
   tags: vim
 
+- ansible.builtin.import_tasks: git.yml
+  tags: git
+
 - ansible.builtin.import_tasks: iterm.yml
   tags: iterm

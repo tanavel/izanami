@@ -1,37 +1,11 @@
-- name: Set default shell
+- name: デフォルトshellをHomebrewで入れたzshに変更
   become: true
   ansible.builtin.user:
-    name: "{{ user_name }}"
-    shell: "{{ zsh_path }}"
+    name: tanavel
+    shell: /usr/local/bin/zsh
 
-- name: Clone Prezto
-  ansible.builtin.git:
-    repo: "{{ prezto_repo_url }}"
-    dest: "{{ ansible_env.HOME }}{{ prezto_dir }}"
-    force: true
-
-- name: Set Prezto
-  ansible.builtin.file:
-    src: "{{ item }}"
-    dest: "{{ ansible_env.HOME }}/.{{ item | basename }}"
-    state: link
-  loop: "{{ q('ansible.builtin.fileglob', ansible_env.HOME + prezto_dir + '/runcoms/*') }}"
-  when: item | basename not in ['README.md', 'zshrc']
-  notify:
-    - load zshenv
-    - load zprofile
-
-- name: Set my zshrc
+- name: zshrcのシンボリックリンクを張る
   ansible.builtin.file:
     src: "{{ role_path }}/files/zshrc"
     dest: "{{ ansible_env.HOME }}/.zshrc"
-    state: link
-  notify:
-    - load zshrc
-
-- name: Set powerlevel10k setting
-  ansible.builtin.file:
-    src: "{{ role_path }}/files/p10k.zsh"
-    dest: "{{ ansible_env.HOME }}/.p10k.zsh"
-    force: true
     state: link

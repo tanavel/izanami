@@ -1,30 +1,32 @@
+taps:
+  - hashicorp/tap
+  - homebrew/cask-fonts
+
 fomulae:
-  - act
-  - exa
-  - gh
+  - awscli
   - hashicorp/tap/terraform
-  - hashicorp/tap/terraform-ls
   - jq
-  - php
+  - pyenv
+  - starship
   - tree
-  - volta
   - zsh
 
 fonts:
   - font-cascadia-code
+  - font-comic-shanns-mono-nerd-font
   - font-fira-code
   - font-hack-nerd-font
   - font-meslo-lg-nerd-font
+  - font-open-dyslexic-nerd-font
   - font-ricty-diminished
   - font-source-code-pro
 
 casks:
   - appcleaner
   - docker
+  - github
   - google-chrome
   - iterm2
   - sequel-ace
-  - session-manager-plugin
   - slack
   - visual-studio-code
-  - sourcetree
