@@ -9,6 +9,7 @@ fomulae:
   - pyenv
   - starship
   - tree
+  - volta
   - zsh
 
 fonts:
