@@ -53,6 +53,7 @@
 [^1]: デフォルトshellの変更をするため`--ask-become-pass`オプションをつけること
 
 ### VSCodeの設定
+#### Import
 - VSCodeを開く
 - コマンドパレットに`>profiles: import profile`と入力し、[profiles: import profile...]をクリック
 - [Select File...]をクリック
@@ -60,6 +61,14 @@
 - [Create Profile]をクリック
 - [Create]をクリック
 - VSCodeを再起動
+- 完了🎉🎉🎉
+
+#### Export
+- VSCodeを開く
+- コマンドパレットに`>profiles: export profile`と入力し、[Profiles: Export Profile...]をクリック
+- [設定]と[拡張機能]だけにチェックが入った状態にし、[エクスポート]をクリックする
+- [ローカル]をクリックする
+- 保存先を[editor/]に指定し保存する
 - 完了🎉🎉🎉
 
 ## Roadmap
