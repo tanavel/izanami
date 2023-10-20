@@ -4,6 +4,7 @@ taps:
 
 fomulae:
   - awscli
+  - go
   - hashicorp/tap/terraform
   - jq
   - pyenv
