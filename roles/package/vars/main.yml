@@ -6,6 +6,7 @@ fomulae:
   - awscli
   - go
   - hashicorp/tap/terraform
+  - imagemagick
   - jq
   - pyenv
   - starship
